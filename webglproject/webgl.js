@@ -45,6 +45,8 @@ const colorBuffer = gl.createBuffer();
 gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
 gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(colorData), gl.STATIC_DRAW);
 
+// programmable shaders! strings is OpenGL code!
+
 vertexShaderSourceCode = `
   precision lowp float;
   attribute vec4 position;
